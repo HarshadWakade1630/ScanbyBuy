@@ -10,7 +10,7 @@ export default function HomeQRCode() {
     const router = useRouter();
 
     useEffect(() => {
-        QRCode.toDataURL("scanby-buy.vercel.app/home", {
+        QRCode.toDataURL("https://scanby-buy.vercel.app/home", {
             width: 350,
             margin: 2,
             color: {
@@ -22,7 +22,7 @@ export default function HomeQRCode() {
 
     return (
         <div
-            onClick={() => router.push("scanby-buy.vercel.app/home")}
+            onClick={() => router.push("/home")}
             className="cursor-pointer rounded-2xl bg-white p-2 transition hover:scale-105"
         >
             {qr && (
