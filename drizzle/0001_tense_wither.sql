@@ -1,0 +1,1 @@
+ALTER TABLE "foods" ALTER COLUMN "rating" SET NOT NULL;
